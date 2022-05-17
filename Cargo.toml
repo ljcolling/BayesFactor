@@ -1,0 +1,16 @@
+[package]
+name = "BayesFactor"
+version = "0.1.0"
+edition = '2018'
+authors = ["Lincoln Colling <lincoln@colling.net.nz>"]
+
+[dependencies]
+libc = "0.2.125"
+r_mathlib = {path = "/Users/lc663/GitHub/rust_stats/"}
+itertools = "0.10.3"
+rayon = "1.5.2"
+bfrs = {path = "/Users/lc663/GitHub/bfrs/"}
+
+[lib]
+name="bfmat"
+crate-type=["staticlib", "dylib"]
